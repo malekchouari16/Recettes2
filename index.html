@@ -175,40 +175,50 @@
 document.addEventListener('DOMContentLoaded', function() {
     const favoriteButtons = document.querySelectorAll('.favorite-button');
 
-    favoriteButtons.forEach(function(button) {
-        const favoriteIcon = button.querySelector('.fa-heart');
-        const imageBox = button.closest('.image-box');
-        const recipeData = {
-            title: imageBox.querySelector('h3').textContent,
-            link: imageBox.querySelector('a').getAttribute('href'),
-            imageSrc: imageBox.querySelector('img').getAttribute('src'),
-            searchTerm: imageBox.getAttribute('data-search-term')
-        };
+    // Function to update the favorite status of buttons
+    function updateFavoriteButtons() {
+        const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-        // Check if the recipe is already in favorites
-        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-        const isFavorited = favorites.some(fav => fav.title === recipeData.title);
-        if (isFavorited) {
-            favoriteIcon.classList.remove('fa-regular');
-            favoriteIcon.classList.add('fa-solid');
-            button.classList.add('favorited');
-        }
+        favoriteButtons.forEach(function(button) {
+            const favoriteIcon = button.querySelector('.fa-heart');
+            const imageBox = button.closest('.image-box');
+            const recipeData = {
+                title: imageBox.querySelector('h3').textContent,
+                link: imageBox.querySelector('a').getAttribute('href'),
+                imageSrc: imageBox.querySelector('img').getAttribute('src'),
+                searchTerm: imageBox.getAttribute('data-search-term')
+            };
 
-        button.addEventListener('click', function() {
-            button.classList.toggle('favorited');
-
-            if (button.classList.contains('favorited')) {
+            const isFavorited = favorites.some(fav => fav.title === recipeData.title);
+            if (isFavorited) {
                 favoriteIcon.classList.remove('fa-regular');
                 favoriteIcon.classList.add('fa-solid');
-                favorites.push(recipeData);
+                button.classList.add('favorited');
             } else {
                 favoriteIcon.classList.remove('fa-solid');
                 favoriteIcon.classList.add('fa-regular');
-                favorites = favorites.filter(fav => fav.title !== recipeData.title);
+                button.classList.remove('favorited');
             }
-            localStorage.setItem('favorites', JSON.stringify(favorites));
+
+            button.addEventListener('click', function() {
+                button.classList.toggle('favorited');
+                if (button.classList.contains('favorited')) {
+                    favoriteIcon.classList.remove('fa-regular');
+                    favoriteIcon.classList.add('fa-solid');
+                    favorites.push(recipeData);
+                } else {
+                    favoriteIcon.classList.remove('fa-solid');
+                    favoriteIcon.classList.add('fa-regular');
+                    const index = favorites.findIndex(fav => fav.title === recipeData.title);
+                    if (index !== -1) favorites.splice(index, 1);
+                }
+                localStorage.setItem('favorites', JSON.stringify(favorites));
+            });
         });
-    });
+    }
+
+    // Initial update of favorite buttons on page load
+    updateFavoriteButtons();
 
     // Search functionality
     const searchButton = document.getElementById('searchButton');
@@ -217,10 +227,9 @@ document.addEventListener('DOMContentLoaded', function() {
     searchButton.addEventListener('click', function() {
         const query = searchInput.value.trim().toLowerCase();
 
-        // Check if the search input is empty
         if (query === '') {
             alert('Please enter a recipe to search for!');
-            return; // Exit the function early
+            return;
         }
 
         const imageBoxes = document.querySelectorAll('.image-box');
@@ -240,7 +249,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
 
 </script>
 
