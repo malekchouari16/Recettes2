@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy bites, desserts</title>
+    <style>      
+        /* CSS styles go here */
+        body {
+
+
+            margin: 0;
+            padding: 0;
+            background-color :#F5F0D7;
+            text-align: left;
+            position: center;
+            color: white;
+       
+        }
+        header{
+            height: 80px;
+            width: 100%;
+            background: #000000;
+            color:#fff;
+            display: flex;
+          }
+         
+          .container{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+          }
+          nav ul li{
+            list-style: none;
+            display:inline;
+            margin-right: 20px;
+            justify-content: space-between;
+          }
+      .logo {
+        font-size: 25px;
+      }
+
+
+      .hero{
+        width: 100%;
+        height: auto;
+        background: url(https://static.vecteezy.com/system/resources/previews/022/981/058/large_2x/healthy-food-clean-eating-selection-on-dark-background-balanced-diet-concept-top-view-flat-lay-free-photo.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 140px 0;
+        font-size: 25px;
+
+
+      }
+      .hero p{
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-style:italic;
+      }
+       
+        .search-box{
+        max-width: 550px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px ;
+        background: rgb(255, 255, 255);
+
+
+
+
+        }
+       
+        .search-box input{
+        width: 70%;
+        padding: 15px;
+        outline: none;
+        border:0;
+        font-size: 1rem;
+        border-radius: 50px ;
+        }
+
+
+        .search-box button {
+          width: 30%;
+          padding: 15px;
+          outline: none;
+          border: 0;
+          font-size: 1rem;
+          background-color: #F5F0D7;
+          cursor: pointer;
+          border-radius: 50px;
+          }
+ 
+
+
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+
+     h1{
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 10;
+        font-style: normal;
+        font-size:50px;
+        margin-top: 10px;
+      }
+   
+  .container1{
+
+
+    background-color: #285415;
+    padding: 20px;
+    width: fit-content;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left:50px ;
+    font-family: "Protest Strike",;
+    font-size: 30px;
+  }
+    .image-box {
+        width: 330px;
+        height: 330px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 50px;
+        margin-top: 2%;
+        border-radius: 15%;
+        background-color:#8C9C7C;
+        text-align: center;
+        display: inline-block;
+    }
+   
+    .image-box img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 15%;
+        padding-top: 20px;
+       
+    }
+    h3{
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 50;
+        font-size: 20px;
+        font-style: normal;
+        margin-top: 15px;
+    }
+    .star-rating {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 50px;
+ 
+    }
+   
+    .star-rating span {
+      color: #ffffff;
+      font-size: 35px;
+     
+
+
+    }
+   
+    .star-rating span.checked {
+      color: rgb(255, 213, 0);
+     
+    }
+   
+        .favorite-button {
+            background-color: #F5F0D7;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+       
+        #favoriteIcon {
+            font-size: 35px;
+            transition: color 0.3s;
+        }
+       
+        .favorite-button.favorited {
+            background-color: transparent;
+        }
+       
+        .favorite-button.favorited #favoriteIcon {
+            color: #FF0000;
+        }
+       
+        .favorite-button.favorited #favoriteIcon::before,
+        .favorite-button.favorited #favoriteIcon::after {
+            color: #880606;
+        }
+</style>
+</head>
+<body>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Plats Principaux </title>
+    <script src="Plats.js"></script>
+    <link rel= "stylesheet" href = "Plats.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ae9f8ffd.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">Healthy bites</h1>
+        <nav>
+        <ul class="nav-list">
+        <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+        <li><i class="fa-solid fa-heart" style="color: #ffffff;"></i></li>
+        <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+        </ul>
+        </nav>
+        </div>
+</header>
+<section class="hero">
+
+
+    <div class="hero-section">
+        <h2>DISCOVER HEALTHY BITES: YOUR RECIPE OASIS
+            ! </h2>
+        <P>"To eat is a necessity, but to eat intelligently is an art” </P>
+        <form action="#" class="search-box">
+        <input type="text" placeholder="Search Recipe">
+        <button type="submit">Explore </button>
+        </form>
+        </div>
+</section>
+
+<div class="container1 ">
+    <h2><i class="fa-solid fa-bowl-food" style="color: #ffffff;"></i> Desserts </h2>
+</div>
+<div class="image-box" data-search-term="Tiramisu">
+<a href="Tiramisu.html"><img src="https://w4s8p5t8.rocketcdn.me/wp-content/uploads/2023/09/vegan-tiramisu.jpg.webp"></a>
+<h3>Tiramisu </h3>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+</div>
+
+
+</div>
+<div class="image-box" data-search-term="Strawberry cream cake">
+   <a href="Strawberry cream cake.html"><img src="https://sugargeekshow.com/wp-content/uploads/2021/06/Strawberry_Shortcake_featured.jpg"></a>
+<h3>Strawberry cream cake</h3>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+</div>
+
+<div class="image-box" data-search-term="Strawberry cream cake">
+   <a href="Cupcake.html"><img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Yellow-Cupcakes_EXPS_BSFRTL23_41925_08_09_10b.jpg?fit=700,700"></a>
+<h3>Cupcake</h3>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+</div>
+
+
+
+
+</body>
+
+
+</html>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const favoriteButtons = document.querySelectorAll('.favorite-button');
+
+
+    favoriteButtons.forEach(function(button) {
+        const favoriteIcon = button.querySelector('.fa-heart');
+        const imageBox = button.closest('.image-box');
+        const recipeData = {
+            title: imageBox.querySelector('h3').textContent,
+            link: imageBox.querySelector('a').getAttribute('href'),
+            imageSrc: imageBox.querySelector('img').getAttribute('src'),
+            searchTerm: imageBox.getAttribute('data-search-term')
+        };
+
+
+        // Check if the recipe is already in favorites
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        const isFavorited = favorites.some(fav => fav.title === recipeData.title);
+        if (isFavorited) {
+            favoriteIcon.classList.remove('fa-regular');
+            favoriteIcon.classList.add('fa-solid');
+            button.classList.add('favorited');
+        }
+
+
+        button.addEventListener('click', function() {
+            button.classList.toggle('favorited');
+
+
+            if (button.classList.contains('favorited')) {
+                favoriteIcon.classList.remove('fa-regular');
+                favoriteIcon.classList.add('fa-solid');
+                favorites.push(recipeData);
+            } else {
+                favoriteIcon.classList.remove('fa-solid');
+                favoriteIcon.classList.add('fa-regular');
+                favorites = favorites.filter(fav => fav.title !== recipeData.title);
+            }
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        });
+    });
+
+
+    // Search functionality
+    const searchButton = document.getElementById('searchButton');
+    const searchInput = document.getElementById('searchInput');
+
+
+    searchButton.addEventListener('click', function() {
+        const query = searchInput.value.trim().toLowerCase();
+
+
+        // Check if the search input is empty
+        if (query === '') {
+            alert('Please enter a recipe to search for!');
+            return; // Exit the function early
+        }
+
+
+        const imageBoxes = document.querySelectorAll('.image-box');
+        let found = false;
+
+
+        imageBoxes.forEach(function(box) {
+            const searchTerm = box.getAttribute('data-search-term').toLowerCase();
+            if (searchTerm.includes(query)) {
+                const link = box.querySelector('a').getAttribute('href');
+                window.location.href = link;
+                found = true;
+            }
+        });
+
+
+        if (!found) {
+            alert('Recipe not found!');
+        }
+    });
+});
+
+
+   </script>
