@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Plats Principaux </title>
+    <script src="Plats.js"></script>
+    <link rel= "stylesheet" href = "Recette5.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ae9f8ffd.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">Healthy bites</h1>
+        <nav>
+        <ul class="nav-list">
+        <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+        <a href="Favorites.html"><li><i class="fa-solid fa-heart" style="color: #ffffff;"></i></li></a>
+        <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+        </ul>
+        </nav>
+        </div>
+</header>
+<div class="image-box" data-search-term="Egg Drop Soup & Instant Noodles">
+        <a href="Plats.html" class="exit-button"><i class="fa-solid fa-xmark" style="color: #f6f7f9;"></i></a>
+        <img src="https://www.eatingwell.com/thmb/TGQd4RbfVhcdzSQv5YjWUc8Hsk0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8309319-15065462bbf74d019c7c0f35bbf67526.jpg">
+<h3>Egg Drop Soup & Noodles</h3>
+<h4>→ Ingredients</h4> 
+<p>
+    <br>• Eggs
+    <br>• Chicken or vegetable broth
+    <br>• Instant noodles
+    <br>• Green onions (scallions)
+    <br>• Soy sauce
+    <br>• Sesame oil
+    <br>• Cornstarch
+    <br>• Salt
+    <br>• Pepper
+    <br>• Optional: vegetables such as carrots, mushrooms, or bok choy
+</p>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+  <h5>→ Instructions </h5> 
+  <p class="p1">
+    <br>1. Bring chicken or vegetable broth to a simmer in a pot.
+    <br>2. Cook instant noodles according to package instructions, then set aside.
+    <br>3. In a small bowl, whisk together eggs with a pinch of salt and pepper.
+    <br>4. Slowly pour the beaten eggs into the simmering broth, stirring gently to create egg ribbons.
+    <br>5. Add sliced green onions, soy sauce, and sesame oil to the soup.
+    <br>6. In a separate bowl, mix cornstarch with a little water to form a slurry, then stir it into the soup to thicken.
+    <br>7. Season with additional salt and pepper to taste.
+    <br>8. Divide the cooked noodles into serving bowls.
+    <br>9. Ladle the hot egg drop soup over the noodles.
+    <br>10. Serve immediately, optionally with additional toppings like vegetables.
+    
+</p>
+</div>
+</div>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #F5F0D7;
+        text-align: center; /* Center text and inline elements within the body */
+        color: white;
+    }
+    
+    header {
+        height: 80px;
+        width: 100%;
+        background: #000000;
+        color: #fff;
+        display: flex;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav ul li {
+        list-style: none;
+        display: inline;
+        margin-right: 20px;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        font-size: 25px;
+    }
+    
+    h1 {
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 10;
+        font-style: normal;
+        font-size: 50px;
+        margin-top: 10px;
+    }
+    
+    .image-box {
+        width: 1100px;
+        height: 960px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin: 50px auto; /* Center the element horizontally */
+        margin-top: 5%;
+        border-radius: 50px;
+        background-color: #8C9C7C;
+        text-align: left;
+        position: relative;
+    }
+    
+    .image-box img {
+        width: 400px;
+        height: auto;
+        margin: 20px;
+        padding-top: 20px;
+        border-radius: 20%;
+    }
+    
+    
+    h3 {
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 50;
+        font-size: 35px;
+        font-style: normal;
+        margin-top: 5px;
+        margin-bottom: 1px;
+        margin-left: 30px;
+    }
+
+    h4 {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      font-family: "Protest Strike", sans-serif;
+        font-weight: 50;
+        font-size: 35px;
+        font-style: normal;
+    }
+
+    p {
+      position: absolute;
+      top: 80px; 
+      left: 62%;
+      transform: translateX(-50%);
+      z-index: 1;
+      font-size: 18px;
+    }
+
+    .star-rating {
+        display: flex;
+        justify-content: left;
+        margin-left: 85px;
+        margin-top: 10px;
+        position: absolute;
+        
+    }
+    
+    .star-rating span {
+        color: #ffffff;
+        font-size: 35px;
+    }
+    
+    .star-rating span.checked {
+        color: rgb(255, 213, 0);
+    }
+    
+    h5{
+      position: relative;
+      margin-top: 8%;
+      font-family: "Protest Strike", sans-serif;
+      font-weight: 50;
+      font-size: 35px;
+      font-style: normal;
+      margin-left: 65px ;
+
+    }
+    .p1 {
+
+      margin-top: 600px; 
+      left: 40%;
+      font-size: 18px;
+      color: white;
+      top: 4%;
+    }
+    .favorite-button {
+        background-color: #8C9C7C;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    
+    #favoriteIcon {
+        font-size: 35px;
+        transition: color 0.3s;
+    }
+    
+    .favorite-button.favorited {
+        background-color: transparent;
+    }
+    
+    .favorite-button.favorited #favoriteIcon {
+        color: #FF0000;
+    }
+    
+    .favorite-button.favorited #favoriteIcon::before,
+    .favorite-button.favorited #favoriteIcon::after {
+        color: #880606;
+    }
+
+.exit-button {
+position: absolute;
+top: 20px;
+right: 30px;
+background-color: transparent;
+border: none;
+font-size: 40px;
+color: #fff;
+cursor: pointer;
+text-decoration: none;
+}
+
+.exit-button:hover {
+color: #ccc;
+}
+
+
+</style>
+
+
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+               const favoriteButtons = document.querySelectorAll('.favorite-button');
+   
+               favoriteButtons.forEach(function(button) {
+                   const favoriteIcon = button.querySelector('.fa-heart');
+                   
+                   button.addEventListener('click', function() {
+                       button.classList.toggle('favorited');
+                       if (button.classList.contains('favorited')) {
+                           favoriteIcon.classList.remove('fa-regular');
+                           favoriteIcon.classList.add('fa-solid');
+                       } else {
+                           favoriteIcon.classList.remove('fa-solid');
+                           favoriteIcon.classList.add('fa-regular');
+                       }
+                   });
+               });
+           });
+    
+   </script>
