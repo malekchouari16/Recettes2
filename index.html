@@ -216,9 +216,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     searchButton.addEventListener('click', function() {
         const query = searchInput.value.trim().toLowerCase();
-        const imageBoxes = document.querySelectorAll('.image-box');
 
+        // Check if the search input is empty
+        if (query === '') {
+            alert('Please enter a recipe to search for!');
+            return; // Exit the function early
+        }
+
+        const imageBoxes = document.querySelectorAll('.image-box');
         let found = false;
+
         imageBoxes.forEach(function(box) {
             const searchTerm = box.getAttribute('data-search-term').toLowerCase();
             if (searchTerm.includes(query)) {
@@ -233,27 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-    const searchButton = document.getElementById('searchButton');
-    const searchInput = document.getElementById('searchInput');
 
-    searchButton.addEventListener('click', function() {
-        const query = searchInput.value.toLowerCase();
-        const imageBoxes = document.querySelectorAll('.image-box');
-
-        let found = false;
-        imageBoxes.forEach(function(box) {
-            const searchTerm = box.getAttribute('data-search-term').toLowerCase();
-            if (searchTerm.includes(query)) {
-                const link = box.querySelector('a').getAttribute('href');
-                window.location.href = link;
-                found = true;
-            }
-        });
-
-        if (!found) {
-            alert('Recipe not found!');
-        }
-    });
 
 </script>
 
