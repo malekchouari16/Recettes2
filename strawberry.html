@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strawberry cream cake</title>
+    <style>      
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F5F0D7;
+            text-align: center; /* Center text and inline elements within the body */
+            color: white;
+        }
+       
+        header {
+            height: 80px;
+            width: 100%;
+            background: #000000;
+            color: #fff;
+            display: flex;
+        }
+       
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+       
+        nav ul li {
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            justify-content: space-between;
+        }
+       
+        .logo {
+            font-size: 25px;
+        }
+       
+        h1 {
+            font-family: "Luckiest Guy", cursive;
+            font-weight: 10;
+            font-style: normal;
+            font-size: 50px;
+            margin-top: 10px;
+        }
+       
+        .image-box {
+            width: 1100px;
+            height: 1550px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 50px auto; /* Center the element horizontally */
+            margin-top: 5%;
+            border-radius: 50px;
+            background-color: #8C9C7C;
+            text-align: left;
+            position: relative;
+        }
+       
+        .image-box img {
+            width: 400px;
+            height: auto;
+            margin: 20px;
+            padding-top: 20px;
+            border-radius: 20%;
+        }
+       
+       
+        h3 {
+            font-family: "Protest Strike", sans-serif;
+            font-weight: 50;
+            font-size: 35px;
+            font-style: normal;
+            margin-top: 5px;
+            margin-left: 65px;
+            margin-bottom: 1px;
+        }
+ 
+        h4 {
+          position: absolute;
+          top: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1;
+          font-family: "Protest Strike", sans-serif;
+            font-weight: 50;
+            font-size: 35px;
+            font-style: normal;
+        }
+ 
+        p {
+          font-family: "Grafton", sans-serif;
+          position: absolute;
+          top: 80px;
+          left: 52%;
+          transform: translateX(-50%);
+          z-index: 1;
+          font-size: 18px;
+        }
+   
+        .star-rating {
+            display: flex;
+            justify-content: left;
+            margin-left: 85px;
+            margin-top: 10px;
+            position: absolute;
+           
+        }
+       
+        .star-rating span {
+            color: #ffffff;
+            font-size: 35px;
+        }
+       
+        .star-rating span.checked {
+            color: rgb(255, 213, 0);
+        }
+       
+        h5{
+          position: relative;
+          margin-top: 8%;
+          font-family: "Protest Strike", sans-serif;
+          font-weight: 50;
+          font-size: 35px;
+          font-style: normal;
+          margin-left: 65px ;
+ 
+        }
+        .p1 {
+ 
+          margin-top: 600px;
+          left: 40%;
+          font-size: 18px;
+          color: white;
+          top: 4%;
+        }
+  .favorite-button {
+            background-color: #8C9C7C;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+       
+        #favoriteIcon {
+            font-size: 35px;
+            transition: color 0.3s;
+        }
+       
+        .favorite-button.favorited {
+            background-color: transparent;
+        }
+       
+        .favorite-button.favorited #favoriteIcon {
+            color: #FF0000;
+        }
+       
+        .favorite-button.favorited #favoriteIcon::before,
+        .favorite-button.favorited #favoriteIcon::after {
+            color: #880606;
+        }
+
+   
+  .exit-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+ 
+  .exit-button:hover {
+    color: #ccc;
+  }
+  
+</style>
+    
+    <title> Plats Principaux </title>
+    <script src="Plats.js"></script>
+    <link rel= "stylesheet" href = "Recette1.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ae9f8ffd.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">Healthy bites</h1>
+        <nav>
+        <ul class="nav-list">
+        <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+        <a href="Favorites.html"><li><i class="fa-solid fa-heart" style="color: #ffffff;"></i></li></a>
+        <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+        </ul>
+        </nav>
+        </div>
+
+
+</header>
+<div class="image-box" data-search-term="Tiramisu">
+        <a href="Plats.html" class="exit-button"><i class="fa-solid fa-xmark" style="color: #f6f7f9;"></i></a>
+<img src="https://sugargeekshow.com/wp-content/uploads/2021/06/Strawberry_Shortcake_featured.jpg">
+<h3>Strawberry cream cake</h3>
+<h4>→ Ingredients</h4>
+<p>
+    <br> <b>Cake</b>
+    <br>• ½ cup reduced-fat milk
+    <br>• 1 ½ cups all-purpose flour
+    <br>• 2 teaspoons baking powder
+    <br>• 3 large eggs
+    <br>• 1 teaspoon vanilla extract
+    <br>• ¼ teaspoon salt
+    <br>• 1 cup sugar
+    <br>
+    <br> <b>Filling</b>
+    <br>• 1 pound strawberries
+    <br>• ¼ cup sugar
+    <br>• ¼ teaspoon vanilla extract
+    <br>
+    <br> <b>Vanilla cream</b>
+    <br>• ½ cup heavy cream
+    <br>• 2 tablespoons
+    <br>confectioners'sugar
+    <br>• 1 cup vanilla Greek yogurt
+</p>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+  <h5>→ Instructions </h5>
+  <p class="p1">
+    <br>1. To prepare cake: Butter the bottom and sides of two 9-inch round cake pans; line the bottoms with parchment paper. Preheat oven to 350 degrees F.
+    <br>
+    <br>2. Combine milk and 4 tablespoons butter in a small saucepan. Heat over low heat until the butter is just melted. Set aside.
+    <br> 
+    <br>3. Stir flour and baking powder together, then sift onto a piece of parchment paper.
+    <br>
+    <br>4. Whisk eggs, 1 teaspoon vanilla and salt in a mixing bowl by hand to combine. Whisk in 1 cup sugar in a stream. Then, using a stand mixer fitted with the whisk attachment (or a hand-held electric mixer), whip the egg mixture at medium-high speed until lighter in color and very light and fluffy in texture, 3 to 5 minutes in a stand mixer or 5 minutes with a hand mixer.
+    <br>
+    <br>5. Gently whisk in the warm milk mixture by hand. Add the flour mixture in 4 additions, lifting the parchment to help sprinkle it in. Use the whisk as you would a rubber spatula to fold the flour into the liquid, gently whisking to incorporate each time. Divide the batter between the prepared pans and smooth the tops.
+    <br> 
+    <br>6. Bake in the center of the oven until golden and firm when touched in the center, 20 to 24 minutes. Let cool in the pans on wire racks for 10 minutes.
+    <br>
+    <br>7. Run a sharp paring knife around the layers to loosen, then invert the layers onto the racks. Immediately turn the layers over so they cool with the paper on the bottom. Let cool completely.
+    <br>
+    <br>8. Meanwhile, prepare filling: Combine strawberries, 1/4 cup sugar and vanilla in a medium bowl. Let stand at room temperature until the strawberries start to give off juice, 20 to 30 minutes.
+    <br> 
+    <br>9. To prepare vanilla cream and assemble cake: Whip cream in a large bowl until soft peaks form. Add confectioners' sugar and continue whipping until firm peaks form. Fold in yogurt. Set aside.
+    <br>
+    <br>10. Remove the parchment paper from the cake layers. Place one layer on a cake stand or plate. Drizzle any liquid from the strawberries over the cake. Spread half of the cream mixture evenly over the top and spread half of the strawberries over the cream. Place the remaining layer on top. Spread the remaining cream over the cake and top with the remaining strawberries.
+</p>
+</div>
+</div>
+
+
+
+
+
+
+</html>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const favoriteButtons = document.querySelectorAll('.favorite-button');
+
+
+    favoriteButtons.forEach(function(button) {
+        const favoriteIcon = button.querySelector('.fa-heart');
+        const imageBox = button.closest('.image-box');
+        const recipeData = {
+            title: imageBox.querySelector('h3').textContent,
+            link: imageBox.querySelector('a').getAttribute('href'),
+            imageSrc: imageBox.querySelector('img').getAttribute('src'),
+            searchTerm: imageBox.getAttribute('data-search-term')
+        };
+
+
+        // Check if the recipe is already in favorites
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        const isFavorited = favorites.some(fav => fav.title === recipeData.title);
+        if (isFavorited) {
+            favoriteIcon.classList.remove('fa-regular');
+            favoriteIcon.classList.add('fa-solid');
+            button.classList.add('favorited');
+        }
+
+
+        button.addEventListener('click', function() {
+            button.classList.toggle('favorited');
+
+
+            if (button.classList.contains('favorited')) {
+                favoriteIcon.classList.remove('fa-regular');
+                favoriteIcon.classList.add('fa-solid');
+                favorites.push(recipeData);
+            } else {
+                favoriteIcon.classList.remove('fa-solid');
+                favoriteIcon.classList.add('fa-regular');
+                favorites = favorites.filter(fav => fav.title !== recipeData.title);
+            }
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        });
+    });
+
+
+    // Search functionality
+    const searchButton = document.getElementById('searchButton');
+    const searchInput = document.getElementById('searchInput');
+
+
+    searchButton.addEventListener('click', function() {
+        const query = searchInput.value.trim().toLowerCase();
+
+
+        // Check if the search input is empty
+        if (query === '') {
+            alert('Please enter a recipe to search for!');
+            return; // Exit the function early
+        }
+
+
+        const imageBoxes = document.querySelectorAll('.image-box');
+        let found = false;
+
+
+        imageBoxes.forEach(function(box) {
+            const searchTerm = box.getAttribute('data-search-term').toLowerCase();
+            if (searchTerm.includes(query)) {
+                const link = box.querySelector('a').getAttribute('href');
+                window.location.href = link;
+                found = true;
+            }
+        });
+
+
+        if (!found) {
+            alert('Recipe not found!');
+        }
+    });
+});
+
+
+   </script>
