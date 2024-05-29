@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Plats Principaux </title>
+    <script src="Plats.js"></script>
+    <link rel= "stylesheet" href = "Recette4.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ae9f8ffd.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">Healthy bites</h1>
+        <nav>
+        <ul class="nav-list">
+        <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+        <a href="Favorites.html"><li><i class="fa-solid fa-heart" style="color: #ffffff;"></i></li></a>
+        <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+        </ul>
+        </nav>
+        </div>
+</header>
+<div class="image-box"  data-search-term="Salmon Sushi Grain Bowl">
+        <a href="Plats.html" class="exit-button"><i class="fa-solid fa-xmark" style="color: #f6f7f9;"></i></a>
+        <img src="https://www.eatingwell.com/thmb/Qty0LhIwXB7jeQLZQVWgqyedX2A=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/4565461-faa29ecec6764a0aae8dc29163d85ed9.jpg">
+<h3>Salmond Sushi Grain </h3>
+<h4>→ Ingredients</h4> 
+<p>
+    <br>• Salmon
+    <br>• Sushi rice
+    <br>• Avocado
+    <br>• Cucumber
+    <br>• Carrot
+    <br>• Edamame
+    <br>• Nori (seaweed)
+    <br>• Sesame seeds
+    <br>• Soy sauce
+    <br>• Rice vinegar
+    <br>•Sugar
+    <br>• Salt
+</p>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+  <h5>→ Instructions </h5> 
+  <p class="p1">
+    <br> 1.Cook sushi rice according to package instructions.
+    <br> 2.Season the cooked rice with a mixture of rice vinegar, sugar, and salt.
+    <br> 3.Slice the salmon into thin strips.
+    <br> 4.Dice the avocado and cucumber.
+    <br> 5.Julienne the carrot.
+    <br> 6.Steam or boil the edamame until tender.
+    <br> 7.Toast sesame seeds in a dry pan until golden brown.
+    <br> 8.Arrange the seasoned rice in bowls.
+    <br> 9.Top the rice with salmon, avocado, cucumber, carrot, and edamame.
+    <br> 10.Sprinkle with toasted sesame seeds.
+    <br> 11.Serve with soy sauce on the side.
+    <br> 12.Optionally, garnish with nori strips.
+</p>
+</div>
+</div>
+
+
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+               const favoriteButtons = document.querySelectorAll('.favorite-button');
+   
+               favoriteButtons.forEach(function(button) {
+                   const favoriteIcon = button.querySelector('.fa-heart');
+                   
+                   button.addEventListener('click', function() {
+                       button.classList.toggle('favorited');
+                       if (button.classList.contains('favorited')) {
+                           favoriteIcon.classList.remove('fa-regular');
+                           favoriteIcon.classList.add('fa-solid');
+                       } else {
+                           favoriteIcon.classList.remove('fa-solid');
+                           favoriteIcon.classList.add('fa-regular');
+                       }
+                   });
+               });
+           });
+    
+   </script>

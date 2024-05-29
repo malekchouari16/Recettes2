@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Plats Principaux </title>
+    <script src="Plats.js"></script>
+    <link rel= "stylesheet" href = "Recette9.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ae9f8ffd.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">Healthy bites</h1>
+        <nav>
+        <ul class="nav-list">
+        <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+        <a href="Favorites.html"><li><i class="fa-solid fa-heart" style="color: #ffffff;"></i></li></a>
+        <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+        </ul>
+        </nav>
+        </div>
+</header>
+<div class="image-box" data-search-term="CWalnut-Rosemary Crusted Salmon">
+        <a href="Plats.html" class="exit-button"><i class="fa-solid fa-xmark" style="color: #f6f7f9;"></i></a>
+        <img src="https://www.eatingwell.com/thmb/IuTXJK5lP9UT7ajjwIoG3WiPpVY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/5634013-62e75b4c0c4a49f49adf8848a6b483c5.jpg">
+<h3>CWalnut-Rosemary Crusted Salmon</h3>
+<h4>→ Ingredients</h4> 
+<p>
+    <br>• Salmon fillets
+    <br>• Walnuts
+    <br>• Fresh rosemary
+    <br>• Panko breadcrumbs
+    <br>• Olive oil
+    <br>• Dijon mustard
+    <br>• Honey
+    <br>• Salt
+    <br>• Pepper
+    <br>• Lemon wedges (optional, for serving)
+    
+</p>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+  <h5>→ Instructions </h5> 
+  <p class="p1">
+    <br>1. Preheat oven to 375°F (190°C).
+    <br>2. In a food processor, pulse walnuts and fresh rosemary until finely chopped.
+    <br>3. In a bowl, combine chopped walnuts, rosemary, and panko breadcrumbs.
+    <br>4. In a small bowl, mix Dijon mustard, honey, salt, and pepper.
+    <br>5. Place salmon fillets on a baking sheet lined with parchment paper.
+    <br>6. Brush the top of each salmon fillet with the mustard and honey mixture.
+    <br>7. Press the walnut-rosemary mixture onto the mustard-coated salmon, ensuring an even crust.
+    <br>8. Drizzle a little olive oil over the crusted salmon fillets.
+    <br>9. Bake in the preheated oven for 15-20 minutes, or until the salmon is cooked through and the crust is golden brown.
+    <br>10. Serve hot, optionally with lemon wedges for squeezing over the top.
+    
+</p>
+</div>
+</div>
+
+
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+               const favoriteButtons = document.querySelectorAll('.favorite-button');
+   
+               favoriteButtons.forEach(function(button) {
+                   const favoriteIcon = button.querySelector('.fa-heart');
+                   
+                   button.addEventListener('click', function() {
+                       button.classList.toggle('favorited');
+                       if (button.classList.contains('favorited')) {
+                           favoriteIcon.classList.remove('fa-regular');
+                           favoriteIcon.classList.add('fa-solid');
+                       } else {
+                           favoriteIcon.classList.remove('fa-solid');
+                           favoriteIcon.classList.add('fa-regular');
+                       }
+                   });
+               });
+           });
+    
+   </script>

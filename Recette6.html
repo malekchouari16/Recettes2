@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Plats Principaux </title>
+    <script src="Plats.js"></script>
+    <link rel= "stylesheet" href = "Recette6.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ae9f8ffd.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">Healthy bites</h1>
+        <nav>
+        <ul class="nav-list">
+        <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+        <a href="Favorites.html"><li><i class="fa-solid fa-heart" style="color: #ffffff;"></i></li></a>
+        <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+        </ul>
+        </nav>
+        </div>
+</header>
+<div class="image-box" data-search-term="Open-Face Goat Cheese Sandwich">
+        <a href="Plats.html" class="exit-button"><i class="fa-solid fa-xmark" style="color: #f6f7f9;"></i></a>
+        <img src="https://www.eatingwell.com/thmb/SbKx4kkVvOPrZT1J1c7goMq5Umc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8412571-9e293d03accf45e2bf67e132a2434a61.jpg">
+<h3>Open-Face Goat Cheese Sandwich</h3>
+<h4>→ Ingredients</h4> 
+<p>
+
+    <br>• Goat cheese
+    <br>• Bread (sliced)
+    <br>• Tomato
+    <br>• Fresh basil leaves
+    <br>• Balsamic glaze
+    <br>• Olive oil
+    <br>• Salt
+    <br>• Pepper
+</p>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+  <h5>→ Instructions </h5> 
+  <p class="p1">
+    <br>1. Preheat your oven to 375°F (190°C).
+    <br>2. Place the slices of bread on a baking sheet.
+    <br>3. Spread goat cheese evenly over each slice of bread.
+    <br>4. Slice the tomato thinly and arrange the slices over the goat cheese.
+    <br>5. Drizzle olive oil over the tomato slices.
+    <br>6. Season with salt and pepper to taste.
+    <br>7. Bake in the preheated oven for about 8-10 minutes, or until the edges of the bread are golden brown and the cheese is melted.
+    <br>8. Remove from the oven and let it cool slightly.
+    <br>9. Garnish with fresh basil leaves.
+    <br>10. Drizzle balsamic glaze over the top.
+    <br>11. Serve warm and enjoy your delicious Open-Face Goat Cheese Sandwich!
+</p>
+</div>
+</div>
+
+
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+               const favoriteButtons = document.querySelectorAll('.favorite-button');
+   
+               favoriteButtons.forEach(function(button) {
+                   const favoriteIcon = button.querySelector('.fa-heart');
+                   
+                   button.addEventListener('click', function() {
+                       button.classList.toggle('favorited');
+                       if (button.classList.contains('favorited')) {
+                           favoriteIcon.classList.remove('fa-regular');
+                           favoriteIcon.classList.add('fa-solid');
+                       } else {
+                           favoriteIcon.classList.remove('fa-solid');
+                           favoriteIcon.classList.add('fa-regular');
+                       }
+                   });
+               });
+           });
+    
+   </script>

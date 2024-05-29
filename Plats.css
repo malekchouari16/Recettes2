@@ -1,0 +1,195 @@
+        /* CSS styles go here */
+        body {
+
+            margin: 0;
+            padding: 0;
+            background-color :#F5F0D7;
+            text-align: left;
+            position: center;
+            color: white;
+       
+        }
+        header{
+            height: 80px;
+            width: 100%;
+            background: #000000;
+            color:#fff;
+            display: flex;
+          }
+          
+          .container{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+          }
+          nav ul li{
+            list-style: none;
+            display:inline;
+            margin-right: 20px;
+            justify-content: space-between;
+          }
+      .logo {
+        font-size: 25px;
+      }
+
+      .hero{
+        width: 100%;
+        height: auto;
+        background: url(https://static.vecteezy.com/system/resources/previews/022/981/058/large_2x/healthy-food-clean-eating-selection-on-dark-background-balanced-diet-concept-top-view-flat-lay-free-photo.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        padding: 140px 0;
+        font-size: 25px;
+
+      }
+      .hero p{
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-style:italic;
+      }
+        
+        .search-box{
+        max-width: 550px;
+        margin: 15px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px ;
+        background: rgb(255, 255, 255);
+
+
+        }
+        
+        .search-box input{
+        width: 70%;
+        padding: 15px;
+        outline: none;
+        border:0;
+        font-size: 1rem;
+        border-radius: 50px ;
+        }
+
+        .search-box button {
+          width: 30%;
+          padding: 15px;
+          outline: none;
+          border: 0;
+          font-size: 1rem;
+          background-color: #F5F0D7;
+          cursor: pointer;
+          border-radius: 50px;
+          }
+  
+
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+
+     h1{
+        font-family: "Luckiest Guy", cursive;
+        font-weight: 10;
+        font-style: normal;
+        font-size:50px;
+        margin-top: 10px;
+      }
+    
+  .container1{
+
+    background-color: #285415;
+    padding: 20px;
+    width: fit-content;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    margin-left:50px ;
+    font-family: "Protest Strike",;
+    font-size: 30px;
+  }
+    .image-box {
+        width: 330px;
+        height: 330px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-left: 50px;
+        margin-top: 2%;
+        border-radius: 15%;
+        background-color:#8C9C7C;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .image-box img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 15%;
+        padding-top: 20px;
+        
+    }
+    h3{
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 50;
+        font-size: 20px;
+        font-style: normal;
+        margin-top: 15px;
+    }
+    .star-rating {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 50px;
+  
+    }
+    
+    .star-rating span {
+      color: #ffffff;
+      font-size: 35px;
+      
+
+    }
+    
+    .star-rating span.checked {
+      color: rgb(255, 213, 0);
+      
+    }
+    
+          .favorite-button {
+            background-color: #F5F0D7;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s; 
+        }
+        
+        #favoriteIcon {
+            font-size: 30px;
+            transition: color 0.3s;
+        }
+        
+        .favorite-button.favorited {
+            background-color: #F5F0D7; 
+        }
+        
+        .favorite-button.favorited #favoriteIcon {
+            color: red;  
+        }
+        
+    .favorite-button.favorited #favoriteIcon::before,
+    .favorite-button.favorited #favoriteIcon::after {
+      color: #880606; /* Change to red */
+}
+        
+        .material-symbols-outlined {
+          size-adjust: 100px;
+          
+        }
