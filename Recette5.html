@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Plats Principaux </title>
+    <script src="Plats.js"></script>
+    <link rel= "stylesheet" href = "Recette5.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c6ae9f8ffd.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Luckiest+Guy&family=Oswald:wght@200..700&family=Permanent+Marker&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1 class="logo">Healthy bites</h1>
+        <nav>
+        <ul class="nav-list">
+        <li><i class="fa-solid fa-house" style="color: #ffffff;"></i></li>
+        <a href="Favorites.html"><li><i class="fa-solid fa-heart" style="color: #ffffff;"></i></li></a>
+        <li><i class="fa-solid fa-user" style="color: #ffffff;"></i></li>
+        </ul>
+        </nav>
+        </div>
+</header>
+<div class="image-box" data-search-term="Egg Drop Soup & Instant Noodles">
+        <a href="Plats.html" class="exit-button"><i class="fa-solid fa-xmark" style="color: #f6f7f9;"></i></a>
+        <img src="https://www.eatingwell.com/thmb/TGQd4RbfVhcdzSQv5YjWUc8Hsk0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8309319-15065462bbf74d019c7c0f35bbf67526.jpg">
+<h3>Egg Drop Soup & Noodles</h3>
+<h4>→ Ingredients</h4> 
+<p>
+    <br>• Eggs
+    <br>• Chicken or vegetable broth
+    <br>• Instant noodles
+    <br>• Green onions (scallions)
+    <br>• Soy sauce
+    <br>• Sesame oil
+    <br>• Cornstarch
+    <br>• Salt
+    <br>• Pepper
+    <br>• Optional: vegetables such as carrots, mushrooms, or bok choy
+</p>
+<div class="star-rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <button class="favorite-button" id="favoriteButton">
+        <i class="fa-regular fa-heart" id="favoriteIcon" style="color: #000000;"></i>
+    </button>
+  </div>
+  <h5>→ Instructions </h5> 
+  <p class="p1">
+    <br>1. Bring chicken or vegetable broth to a simmer in a pot.
+    <br>2. Cook instant noodles according to package instructions, then set aside.
+    <br>3. In a small bowl, whisk together eggs with a pinch of salt and pepper.
+    <br>4. Slowly pour the beaten eggs into the simmering broth, stirring gently to create egg ribbons.
+    <br>5. Add sliced green onions, soy sauce, and sesame oil to the soup.
+    <br>6. In a separate bowl, mix cornstarch with a little water to form a slurry, then stir it into the soup to thicken.
+    <br>7. Season with additional salt and pepper to taste.
+    <br>8. Divide the cooked noodles into serving bowls.
+    <br>9. Ladle the hot egg drop soup over the noodles.
+    <br>10. Serve immediately, optionally with additional toppings like vegetables.
+    
+</p>
+</div>
+</div>
+
+
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+               const favoriteButtons = document.querySelectorAll('.favorite-button');
+   
+               favoriteButtons.forEach(function(button) {
+                   const favoriteIcon = button.querySelector('.fa-heart');
+                   
+                   button.addEventListener('click', function() {
+                       button.classList.toggle('favorited');
+                       if (button.classList.contains('favorited')) {
+                           favoriteIcon.classList.remove('fa-regular');
+                           favoriteIcon.classList.add('fa-solid');
+                       } else {
+                           favoriteIcon.classList.remove('fa-solid');
+                           favoriteIcon.classList.add('fa-regular');
+                       }
+                   });
+               });
+           });
+    
+   </script>
